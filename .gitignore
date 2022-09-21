@@ -1,0 +1,10 @@
+ *.pyc
+*~
+__pycache__
+env
+media
+.DS_Store
+.vscode
+manage.py
+pyvenv.cfg
+db.sqlite3

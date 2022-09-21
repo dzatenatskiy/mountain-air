@@ -1,0 +1,133 @@
+{% extends 'blog/base.html' %}
+
+{% load static %}
+
+{% block title %} Главная - Горный воздух {% endblock %}
+
+{% block content %}
+  <body class="body">
+    <div data-w-id="44196043-6c6d-3952-3477-81638358d1c8" class="header wf-section">
+      {% include 'blog/navbar.html' %}
+    </div>
+    <div class="slider wf-section">
+      <div data-delay="4000" data-animation="slide" class="slider-container w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+        <div class="w-slider-mask">
+          <div data-w-id="a43a6ab5-da56-9c66-d74e-a3aff5cdbad2" class="slider-slide slide1 w-slide">
+            <div class="slider-text-container w-container">
+              <h3 style="opacity:0" class="slider-header-1">Добро пожаловать в</h3>
+              <div style="opacity:0" class="slider-line"></div>
+              <h2 style="opacity:0" class="slider-header-2">Горный воздух</h2>
+              <div style="opacity:0" class="slider-text">В любое время года с нами уютно!</div>
+            </div>
+          </div>
+          <div class="slider-slide slide2 w-slide">
+          </div>
+          <div class="slider-slide slide3 w-slide">
+          </div>
+        </div>
+        <div class="w-slider-arrow-left">
+          <div class="w-icon-slider-left"></div>
+        </div>
+        <div class="w-slider-arrow-right">
+          <div class="w-icon-slider-right"></div>
+        </div>
+        <div class="w-slider-nav w-round"></div>
+      </div>
+    </div>
+    <div class="room wf-section">
+      <div class="w-container">
+          <h3 class="room-header">Комнаты</h3>
+          <div class="w-row">
+              <div class="w-col w-col-6">
+                  <div class="room-contaner">
+                      <img src="{% static 'img/8W7A3636.jpg' %}" loading="lazy" sizes="(max-width: 767px) 96vw, (max-width: 991px) 354px, 460px" srcset="https://uploads-ssl.webflow.com/62f769fbfd7b99fe7c370946/630fb074b919f6e9796353fa_8W7A3636-p-500.jpg 500w, https://uploads-ssl.webflow.com/62f769fbfd7b99fe7c370946/630fb074b919f6e9796353fa_8W7A3636-p-800.jpg 800w" alt="" class="room-image">
+                      <p class="room-description">Стандарт семейный</p>
+                  </div>
+              </div>
+              <div class="w-col w-col-6">
+                  <div class="room-contaner">
+                      <img src="{% static 'img/slider6.png' %}" loading="lazy" sizes="(max-width: 767px) 96vw, (max-width: 991px) 354px, 460px" srcset="https://uploads-ssl.webflow.com/62f769fbfd7b99fe7c370946/630515659ac8b86f95b5574b_slider6-p-500.png 500w, https://uploads-ssl.webflow.com/62f769fbfd7b99fe7c370946/630515659ac8b86f95b5574b_slider6-p-800.png 800w, https://uploads-ssl.webflow.com/62f769fbfd7b99fe7c370946/630515659ac8b86f95b5574b_slider6-p-1080.png 1080w, https://uploads-ssl.webflow.com/62f769fbfd7b99fe7c370946/630515659ac8b86f95b5574b_slider6.png 1200w" alt="" class="room-image">
+                      <p class="room-description">Люкс семейный</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+    <div class="booking wf-section">
+      <div class="w-container">
+        <h3 class="booking-header">ЗАБРОНИРОВАТЬ</h3>
+        <div id="booking_iframe" style="padding-bottom: 32px;position: relative;">
+            <div id="bn_iframe" style='position: absolute;right: 0;margin-top: 12px;font-family: "Proxima Nova", "Helvetica Neue", "Cera Pro Medium", Arial, Helvetica, sans-serif;font-size: 12px;line-height: 1em;opacity: 0.5;z-index: 3;bottom:0;'>
+            </div>
+        </div>
+            <script src="https://widget.reservationsteps.ru/iframe/library/dist/booking_iframe.js"></script>
+            <script type="text/javascript">
+            var BookingIframe = new BookingIframe({
+            html_id: 'booking_iframe',
+            uid: '67c03be7-428d-4043-9e56-be716a14cbec',
+            lang: 'ru',
+            width: 'auto',
+            height: 'auto',
+            rooms: '',
+            IsMobile: '0',
+            scroll_to_rooms: '1'
+            })
+            BookingIframe.init()
+            </script>
+      </div>
+    </div>
+    <div class="about-us wf-section">
+      <div class="w-container">
+        <div class="w-row">
+          <div class="about-us-column1 w-col w-col-6">
+            <h3 class="about-us-header">КРАТКО О НАС</h3>
+            <div class="about-us-line"></div>
+          </div>
+          <div class="w-col w-col-6">
+            <p class="about-us-text"><strong class="bold-text-2"> «ГОРНЫЙ ВОЗДУХ» п. Гузерипль принимает своих гостей с 2012 года. Задумываясь о собственном Доме мы («ГОРНЫЙ ВОЗДУХ» п. Гузерипль) исходили из того, что место, которое мы так любим, может принести немало радости ВАМ. Надеемся у ВАС все так и случится.      <br>В учебниках по маркетингу сказано, что на сей счет должна быть какая-нибудь красивая история из серии: «давным-давно в одной из башен королевского замка…», но, может быть к счастью, у нас («ГОРНЫЙ ВОЗДУХ» п. Гузерипль) все вышло тривиально. Пока, во всяком случае.</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gallery wf-section" data-w-id="bc3fe168-4b49-f0fb-3009-d412543dd460">
+      <div class="w-container">
+        <h1 class="gallery-header">Фото</h1>
+        <div class="gallery-line"></div>
+        <div class="gallery-container">
+          <img src="{% static 'img/8W7A3478.jpg' %}" loading="lazy" style="opacity:1;" sizes="(max-width: 767px) 33vw, (max-width: 991px) 240.234375px, 310.1875px" srcset="{% static 'img/8W7A3478-p-500.jpg' %} 500w, {% static 'img/8W7A3478-p-800.jpg' %} 800w" alt="" class="gallery-image gallery-image-1">
+          <img src="{% static 'img/-44.jpg' %}" loading="lazy" style="opacity:1;" srcset="{% static 'img/-44-p-500.jpg' %} 500w, {% static 'img/-44-p-800.jpg' %} 800w, {% static 'img/-44-p-1080.jpg' %} 1080w" sizes="(max-width: 767px) 33vw, (max-width: 991px) 240.234375px, 310.1875px" alt="" class="gallery-image gallery-image-2">
+          <img src="{% static 'img/-43.jpg' %}" loading="lazy" style="opacity:1;" srcset="{% static 'img/-43-p-500.jpg' %} 500w, {% static 'img/-43-p800.jpg' %} 800w, {% static 'img/-43-p-1080.jpg' %} 1080w" sizes="(max-width: 767px) 33vw, (max-width: 991px) 240.234375px, 310.1875px" alt="" class="gallery-image gallery-image-3">
+          <img src="{% static 'img/-3.jpg' %}" loading="lazy" style="opacity:1;" srcset="{% static 'img/-3-p-500.jpg' %} 500w, {% static 'img/-3-p-800.jpg' %} 800w, {% static 'img/-3-p-1080.jpg' %} 1080w, {% static 'img/-3.jpg' %} 1200w" sizes="(max-width: 767px) 33vw, (max-width: 991px) 240.234375px, 310.1875px" alt="" class="gallery-image gallery-image-4">
+          <img src="{% static 'img/-11.jpg' %}" loading="lazy" style="opacity:1;" srcset="{% static 'img/-11-p-500.jpg' %} 500w, {% static 'img/-11-p-800.jpg' %} 800w, {% static 'img/-11-p-1080.jpg' %} 1080w, {% static 'img/-11.jpg' %} 1200w" sizes="(max-width: 767px) 33vw, (max-width: 991px) 240.234375px, 310.1875px" alt="" class="gallery-image gallery-image-5">
+          <img src="{% static 'img/-20.jpg' %}" loading="lazy" style="opacity:1;" srcset="{% static 'img/-20-p-500.jpg' %} 500w, {% static 'img/-20-p-800.jpg' %} 800w, {% static 'img/-20-p-1080.jpg' %} 1080w, {% static 'img/-20.jpg' %} 1200w" sizes="(max-width: 767px) 33vw, (max-width: 991px) 240.234375px, 310.1875px" alt="" class="gallery-image gallery-image-6">
+        </div>
+        <div class="gallery-button-container"><a href="#" class="gallery-button">Больше фото</a><a href="#" class="review-icon"><strong></strong></a></div>
+      </div>
+    </div>
+    <div class="reviews wf-section">
+      <div class="w-container">
+        <div data-delay="4000" data-animation="slide" class="review-slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+          <h3 class="review-heading">Отзывы</h3>
+          <div class="w-slider-mask">
+            <div class="w-slide">
+              <p class="review-text">«Мы с семьей часто отдыхаем на природе. Выбираем места где потише и немного людей. Горный воздух для нас идеально подходит. Приезжаем сюда уже не в первый раз. Все нравится, еще бы завтраки организовали:, так как утром не хочется готовить. Но рядом есть кафе, можно сходить туда.»</p>
+              <p class="review-icon"><strong></strong></p>
+              <p class="review-author">Инга</p>
+            </div>
+            <div class="w-slide">
+              <p class="review-text">«Отдых в таких местах  мне всегда нравился. Тем более понравилось, что здание самого Дома деревянное, сделано из сруба. Я вообще люблю дерево. Особо хочу отметить хозяев. Теплое, по-настоящему располагающее общение, все достопримечательности расскажут и покажут, если нужно – отвезут. Достойно!».</p>
+              <p class="review-icon"><strong></strong></p>
+              <p class="review-author">Андрей Семенов</p>
+            </div>
+          </div>
+          <div class="review-left-arrow w-slider-arrow-left">
+            <div class="review-icon-right w-icon-slider-left"></div>
+          </div>
+          <div class="right-arrow w-slider-arrow-right">
+            <div class="review-icon-right w-icon-slider-right"></div>
+          </div>
+          <div class="review-nav w-slider-nav w-round w-num"></div>
+        </div>
+      </div>
+    </div>
+  {% endblock %}

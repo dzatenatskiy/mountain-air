@@ -1,0 +1,71 @@
+{% extends 'blog/base.html' %}
+
+{% load static %}
+
+{% block title %} Контакты - Горный воздух {% endblock %}
+
+{% block content %}
+
+<body>
+    <div class="header-page wf-section">
+      {% include 'blog/navbar.html' %}
+    </div>
+    <div class="page-header wf-section">
+      <div class="page-header-overlay"></div>
+      <div class="w-container">
+        <h2 class="page-header-h2">Контакты</h2>
+        <div class="header-page-line"></div>
+      </div>
+    </div>
+    <div class="contact-page wf-section">
+      <div class="w-container contact-page-container">
+        <div class="w-row">
+          <div class="w-col w-col-4">
+            <div class="contact-page-contact-container">
+              <h3 class="contact-page-contact-header">Связаться с нами</h3>
+              <p class="contact-page-contact-text">Если у вас есть вопросы, пожалуйста, свяжитесь с нами по телефону, электронной почте или заполните контактную форму.  Всегда рады вам!</p>
+              <h3 class="contact-page-contact-header contact-page-contact-header-space">Контактная информация:</h3>
+              <p class="contact-page-contact-text"><i class="fa fa-map-marker contact-page-icon"></i> Адыгея, Гузерипль, Полевая, 3</p>
+              <p class="contact-page-contact-text"><i class="fa fa-phone contact-page-icon"></i> +7 (918) 223-71-71</p>
+              <p class="contact-page-contact-text"><i class="fa fa-envelope contact-page-icon"></i> vozduh-01@yandex.ru</p>
+
+            </div>
+          </div>
+          <div class="w-col w-col-8">
+            <div class="w-form">
+              <form
+                id="email-form"
+                name="email-form"
+                data-name="Email Form"
+                method="get"
+                class="contact-form"
+                aria-label="Email Form">
+                <h1 class="contact-page-header">Написать нам</h1>
+                  {% csrf_token %}
+                  {{ form }}
+                  <input type="submit" data-wait="Please wait..." value="Отправить" class="contact-form-submit w-button" />
+              </form>
+              <div
+                class="w-form-done"
+                tabindex="-1"
+                role="region"
+                aria-label="Email Form success">
+                <div>Thank you! Your submission has been received!</div>
+              </div>
+              <div
+                class="w-form-fail"
+                tabindex="-1"
+                role="region"
+                aria-label="Email Form failure">
+                <div>Oops! Something went wrong while submitting the form.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wf-section">
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9b5dc9c1ce2ac1ec13a38ec4aaca5dab8af63d983a527dd5920ad76531116c9c&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+
+{% endblock %}
