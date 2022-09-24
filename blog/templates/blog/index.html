@@ -53,7 +53,7 @@
           </div>
       </div>
   </div>
-    <div class="booking wf-section">
+    <div class="booking wf-section" id="booking">
       <div class="w-container">
         <h3 class="booking-header">ЗАБРОНИРОВАТЬ</h3>
         <div id="booking_iframe" style="padding-bottom: 32px;position: relative;">
@@ -76,7 +76,7 @@
             </script>
       </div>
     </div>
-    <div class="about-us wf-section">
+    <div class="about-us wf-section" id="about">
       <div class="w-container">
         <div class="w-row">
           <div class="about-us-column1 w-col w-col-6">
@@ -84,7 +84,12 @@
             <div class="about-us-line"></div>
           </div>
           <div class="w-col w-col-6">
-            <p class="about-us-text"><strong class="bold-text-2"> «ГОРНЫЙ ВОЗДУХ» п. Гузерипль принимает своих гостей с 2012 года. Задумываясь о собственном Доме мы («ГОРНЫЙ ВОЗДУХ» п. Гузерипль) исходили из того, что место, которое мы так любим, может принести немало радости ВАМ. Надеемся у ВАС все так и случится.      <br>В учебниках по маркетингу сказано, что на сей счет должна быть какая-нибудь красивая история из серии: «давным-давно в одной из башен королевского замка…», но, может быть к счастью, у нас («ГОРНЫЙ ВОЗДУХ» п. Гузерипль) все вышло тривиально. Пока, во всяком случае.</strong></p>
+            <p class="about-us-text">
+              <strong class="bold-text-2"> 
+                Гостевой дом «Горный Воздух» приглашает Вас отправиться в путешествие в Адыгею! </br>
+                Наш небольшой, уютный Гостевой дом «Горный Воздух» расположен на реке Желобной, в живописном месте, у подножия Главного Кавказского хребта в поселке Гузерипль. Здесь гости могут посетить красивые и живописные места, которые оставят в памяти незабываемые впечатления на долгое время с желанием приезжать к нам. 
+              </strong>
+            </p>
           </div>
         </div>
       </div>
@@ -101,10 +106,10 @@
           <img src="{% static 'img/-11.jpg' %}" loading="lazy" style="opacity:1;" srcset="{% static 'img/-11-p-500.jpg' %} 500w, {% static 'img/-11-p-800.jpg' %} 800w, {% static 'img/-11-p-1080.jpg' %} 1080w, {% static 'img/-11.jpg' %} 1200w" sizes="(max-width: 767px) 33vw, (max-width: 991px) 240.234375px, 310.1875px" alt="" class="gallery-image gallery-image-5">
           <img src="{% static 'img/-20.jpg' %}" loading="lazy" style="opacity:1;" srcset="{% static 'img/-20-p-500.jpg' %} 500w, {% static 'img/-20-p-800.jpg' %} 800w, {% static 'img/-20-p-1080.jpg' %} 1080w, {% static 'img/-20.jpg' %} 1200w" sizes="(max-width: 767px) 33vw, (max-width: 991px) 240.234375px, 310.1875px" alt="" class="gallery-image gallery-image-6">
         </div>
-        <div class="gallery-button-container"><a href="#" class="gallery-button">Больше фото</a><a href="#" class="review-icon"><strong></strong></a></div>
+        <div class="gallery-button-container"><a href="/gallery" class="gallery-button">Больше фото</a><a href="#" class="review-icon"><strong></strong></a></div>
       </div>
     </div>
-    <div class="reviews wf-section">
+    <div class="reviews wf-section" id="reviews">
       <div class="w-container">
         <div data-delay="4000" data-animation="slide" class="review-slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
           <h3 class="review-heading">Отзывы</h3>

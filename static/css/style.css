@@ -117,21 +117,21 @@
    }
    
    .slide1 {
-     background-image: url("../img/slider4.png");
+     background-image: url("../img/slider1.png");
      background-position: 50% 50%;
      background-size: cover;
      background-repeat: repeat, repeat;
    }
 
    .slide2 {
-     background-image: url("../img/slider5.png");
+     background-image: url("../img/slider2.png");
      background-position: 50% 50%;
      background-size: cover;
      background-repeat: repeat, repeat;
    }
 
    .slide3{
-     background-image: url("../img/slider6.png");
+     background-image: url("../img/slider3.jpg");
      background-position: 50% 50%;
      background-size: cover;
      background-repeat: repeat, repeat;
@@ -227,7 +227,7 @@
    .about-us {
      padding-top: 60px;
      padding-bottom: 60px;
-     background-image: url("https://uploads-ssl.webflow.com/62f769fbfd7b99fe7c370946/63076e37443ee73bd9b9de8b_about-us.png");
+     background-image: url("../img/about-us.png");
      background-position: 50% 50%;
      background-size: cover;
      background-repeat: no-repeat;
@@ -657,9 +657,12 @@
    }
    
    .contact-form-input {
+     padding: 16px 19px;
      margin-bottom: 20px;
      border: 0px solid #000;
      background-color: #212121;
+     color: #cecece;
+     font-size: 13px;
    }
    
    .page-header {

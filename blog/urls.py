@@ -6,6 +6,6 @@ from .views import home, contact, gallery
 
 urlpatterns = [
     path('', home),
-    path('контакты/', contact),
-    path('галерея/', gallery),    
+    path('contact/', contact),
+    path('gallery/', gallery),    
 ]
