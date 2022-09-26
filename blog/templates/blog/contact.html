@@ -33,17 +33,11 @@
           </div>
           <div class="w-col w-col-8">
             <div class="w-form">
-              <form
-                id="email-form"
-                name="email-form"
-                data-name="Email Form"
-                method="get"
-                class="contact-form"
-                aria-label="Email Form">
+              <form method="post" class="contact-form" novalidate="novalidate">
                 <h1 class="contact-page-header">Написать нам</h1>
-                  {% csrf_token %}
-                  {{ form }}
-                  <input type="submit" data-wait="Please wait..." value="Отправить" class="contact-form-submit w-button" />
+                {% csrf_token %}
+                {{ form }}
+                <input type="submit" data-wait="Please wait..." value="Отправить" class="contact-form-submit w-button" />
               </form>
               <div
                 class="w-form-done"

@@ -40,13 +40,13 @@
           <div class="w-row">
               <div class="w-col w-col-6">
                   <div class="room-contaner">
-                      <img src="{% static 'img/8W7A3636.jpg' %}" loading="lazy" sizes="(max-width: 767px) 96vw, (max-width: 991px) 354px, 460px" srcset="https://uploads-ssl.webflow.com/62f769fbfd7b99fe7c370946/630fb074b919f6e9796353fa_8W7A3636-p-500.jpg 500w, https://uploads-ssl.webflow.com/62f769fbfd7b99fe7c370946/630fb074b919f6e9796353fa_8W7A3636-p-800.jpg 800w" alt="" class="room-image">
+                      <img src="{% static 'img/8W7A3636.jpg' %}" loading="lazy" sizes="(max-width: 767px) 96vw, (max-width: 991px) 354px, 460px" srcset="{% static 'img/8W7A3636.jpg' %} 500w, {% static 'img/8W7A3636.jpg' %} 800w" alt="" class="room-image">
                       <p class="room-description">Стандарт семейный</p>
                   </div>
               </div>
               <div class="w-col w-col-6">
                   <div class="room-contaner">
-                      <img src="{% static 'img/slider6.png' %}" loading="lazy" sizes="(max-width: 767px) 96vw, (max-width: 991px) 354px, 460px" srcset="https://uploads-ssl.webflow.com/62f769fbfd7b99fe7c370946/630515659ac8b86f95b5574b_slider6-p-500.png 500w, https://uploads-ssl.webflow.com/62f769fbfd7b99fe7c370946/630515659ac8b86f95b5574b_slider6-p-800.png 800w, https://uploads-ssl.webflow.com/62f769fbfd7b99fe7c370946/630515659ac8b86f95b5574b_slider6-p-1080.png 1080w, https://uploads-ssl.webflow.com/62f769fbfd7b99fe7c370946/630515659ac8b86f95b5574b_slider6.png 1200w" alt="" class="room-image">
+                      <img src="{% static 'img/slider6.png' %}" loading="lazy" sizes="(max-width: 767px) 96vw, (max-width: 991px) 354px, 460px" srcset="{% static 'img/slider6.png' %} 500w, {% static 'img/slider6.png' %} 800w, {% static 'img/slider6.png' %} 1080w, {% static 'img/slider6.png' %} 1200w" alt="" class="room-image">
                       <p class="room-description">Люкс семейный</p>
                   </div>
               </div>
@@ -99,13 +99,218 @@
         <h1 class="gallery-header">Фото</h1>
         <div class="gallery-line"></div>
         <div class="gallery-container">
-          <img src="{% static 'img/8W7A3478.jpg' %}" loading="lazy" style="opacity:1;" sizes="(max-width: 767px) 33vw, (max-width: 991px) 240.234375px, 310.1875px" srcset="{% static 'img/8W7A3478-p-500.jpg' %} 500w, {% static 'img/8W7A3478-p-800.jpg' %} 800w" alt="" class="gallery-image gallery-image-1">
-          <img src="{% static 'img/-44.jpg' %}" loading="lazy" style="opacity:1;" srcset="{% static 'img/-44-p-500.jpg' %} 500w, {% static 'img/-44-p-800.jpg' %} 800w, {% static 'img/-44-p-1080.jpg' %} 1080w" sizes="(max-width: 767px) 33vw, (max-width: 991px) 240.234375px, 310.1875px" alt="" class="gallery-image gallery-image-2">
-          <img src="{% static 'img/-43.jpg' %}" loading="lazy" style="opacity:1;" srcset="{% static 'img/-43-p-500.jpg' %} 500w, {% static 'img/-43-p800.jpg' %} 800w, {% static 'img/-43-p-1080.jpg' %} 1080w" sizes="(max-width: 767px) 33vw, (max-width: 991px) 240.234375px, 310.1875px" alt="" class="gallery-image gallery-image-3">
-          <img src="{% static 'img/-3.jpg' %}" loading="lazy" style="opacity:1;" srcset="{% static 'img/-3-p-500.jpg' %} 500w, {% static 'img/-3-p-800.jpg' %} 800w, {% static 'img/-3-p-1080.jpg' %} 1080w, {% static 'img/-3.jpg' %} 1200w" sizes="(max-width: 767px) 33vw, (max-width: 991px) 240.234375px, 310.1875px" alt="" class="gallery-image gallery-image-4">
-          <img src="{% static 'img/-11.jpg' %}" loading="lazy" style="opacity:1;" srcset="{% static 'img/-11-p-500.jpg' %} 500w, {% static 'img/-11-p-800.jpg' %} 800w, {% static 'img/-11-p-1080.jpg' %} 1080w, {% static 'img/-11.jpg' %} 1200w" sizes="(max-width: 767px) 33vw, (max-width: 991px) 240.234375px, 310.1875px" alt="" class="gallery-image gallery-image-5">
-          <img src="{% static 'img/-20.jpg' %}" loading="lazy" style="opacity:1;" srcset="{% static 'img/-20-p-500.jpg' %} 500w, {% static 'img/-20-p-800.jpg' %} 800w, {% static 'img/-20-p-1080.jpg' %} 1080w, {% static 'img/-20.jpg' %} 1200w" sizes="(max-width: 767px) 33vw, (max-width: 991px) 240.234375px, 310.1875px" alt="" class="gallery-image gallery-image-6">
-        </div>
+
+          <div class="gallery-item">
+            <a
+              href="#"
+              class="gallery-page-image w-inline-block w-lightbox"
+              aria-label="open lightbox"
+              aria-haspopup="dialog">
+              <img
+                src="{% static 'img/8W7A3478.jpg' %}"
+                loading="lazy"
+                srcset="
+                {% static 'img/8W7A3478.jpg' %}  500w,
+                {% static 'img/8W7A3478.jpg' %}  800w,
+                {% static 'img/8W7A3478.jpg' %}  1024w
+                "
+                sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 991px) 29vw, 290.2083435058594px"
+                alt="" style="opacity:1;" class="gallery-image gallery-image-1" />
+              <script type="application/json" class="w-json">
+                {
+                  "items": [
+                    {
+                      "_id": "example_img",
+                      "origFileName": "8W7A3478.jpg",
+                      "fileName": "8W7A3478.jpg",
+                      "fileSize": 209587,
+                      "height": 683,
+                      "url": "{% static 'img/8W7A3478.jpg' %}",
+                      "width": 1024,
+                      "type": "image"
+                    }
+                  ],
+                  "group": ""
+                }
+              </script>
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a
+              href="#"
+              class="w-inline-block w-lightbox"
+              aria-label="open lightbox"
+              aria-haspopup="dialog">
+              <img
+                src="{% static 'img/-44.jpg' %}"
+                loading="lazy"
+                srcset="
+                {% static 'img/-44.jpg' %}  500w,
+                {% static 'img/-44.jpg' %}  800w,
+                {% static 'img/-44.jpg' %} 1024w
+                "
+                sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 991px) 29vw, 290.2083435058594px"
+                alt="" style="opacity:1;" class="gallery-image gallery-image-2"/>
+              <script type="application/json" class="w-json">
+                {
+                  "items": [
+                    {
+                      "_id": "example_img",
+                      "origFileName": "-44.jpg",
+                      "fileName": "-44.jpg",
+                      "fileSize": 209587,
+                      "height": 683,
+                      "url": "{% static 'img/-44.jpg' %}",
+                      "width": 1024,
+                      "type": "image"
+                    }
+                  ],
+                  "group": ""
+                }
+              </script>
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a
+              href="#"
+              class="w-inline-block w-lightbox"
+              aria-label="open lightbox"
+              aria-haspopup="dialog">
+              <img
+                src="{% static 'img/-43.jpg' %}"
+                loading="lazy"
+                srcset="
+                {% static 'img/-43.jpg' %}  500w,
+                {% static 'img/-43.jpg' %}  800w,
+                {% static 'img/-43.jpg' %} 1024w
+                "
+                sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 991px) 29vw, 290.2083435058594px"
+                alt="" style="opacity:1;" class="gallery-image gallery-image-3" />
+              <script type="application/json" class="w-json">
+                {
+                  "items": [
+                    {
+                      "_id": "example_img",
+                      "origFileName": "-43.jpg",
+                      "fileName": "-43.jpg",
+                      "fileSize": 209587,
+                      "height": 683,
+                      "url": "{% static 'img/-43.jpg' %}",
+                      "width": 1024,
+                      "type": "image"
+                    }
+                  ],
+                  "group": ""
+                }
+              </script>
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a
+              href="#"
+              class="w-inline-block w-lightbox"
+              aria-label="open lightbox"
+              aria-haspopup="dialog">
+              <img
+                src="{% static 'img/-3.jpg' %}"
+                loading="lazy"
+                srcset="
+                {% static 'img/-3.jpg' %}  500w,
+                {% static 'img/-3.jpg' %}  800w,
+                {% static 'img/-3.jpg' %} 1024w
+                "
+                sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 991px) 29vw, 290.2083435058594px"
+                alt="" style="opacity:1;" class="gallery-image gallery-image-4"/>
+              <script type="application/json" class="w-json">
+                {
+                  "items": [
+                    {
+                      "_id": "example_img",
+                      "origFileName": "-3.jpg",
+                      "fileName": "-3.jpg",
+                      "fileSize": 209587,
+                      "height": 683,
+                      "url": "{% static 'img/-3.jpg' %}",
+                      "width": 1024,
+                      "type": "image"
+                    }
+                  ],
+                  "group": ""
+                }
+              </script>
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a
+              href="#"
+              class="w-inline-block w-lightbox"
+              aria-label="open lightbox"
+              aria-haspopup="dialog">
+              <img
+                src="{% static 'img/-11.jpg' %}"
+                loading="lazy"
+                srcset="
+                {% static 'img/-11.jpg' %}  500w,
+                {% static 'img/-11.jpg' %}  800w,
+                {% static 'img/-11.jpg' %} 1024w
+                "
+                sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 991px) 29vw, 290.2083435058594px"
+                alt="" style="opacity:1;" class="gallery-image gallery-image-5"/>
+              <script type="application/json" class="w-json">
+                {
+                  "items": [
+                    {
+                      "_id": "example_img",
+                      "origFileName": "_-11.jpg",
+                      "fileName": "_-11.jpg",
+                      "fileSize": 209587,
+                      "height": 683,
+                      "url": "{% static 'img/-11.jpg' %}",
+                      "width": 1024,
+                      "type": "image"
+                    }
+                  ],
+                  "group": ""
+                }
+              </script>
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a
+              href="#"
+              class="w-inline-block w-lightbox"
+              aria-label="open lightbox"
+              aria-haspopup="dialog">
+              <img
+                src="{% static 'img/-20.jpg' %}"
+                loading="lazy"
+                srcset="
+                {% static 'img/-20.jpg' %}  500w,
+                {% static 'img/-20.jpg' %}  800w,
+                {% static 'img/-20.jpg' %} 1024w
+                "
+                sizes="(max-width: 479px) 92vw, (max-width: 767px) 46vw, (max-width: 991px) 29vw, 290.2083435058594px"
+                alt="" style="opacity:1;" class="gallery-image gallery-image-6"/>
+              <script type="application/json" class="w-json">
+                {
+                  "items": [
+                    {
+                      "_id": "example_img",
+                      "origFileName": "-20.jpg",
+                      "fileName": "-20.jpg",
+                      "fileSize": 209587,
+                      "height": 683,
+                      "url": "{% static 'img/-20.jpg' %}",
+                      "width": 1024,
+                      "type": "image"
+                    }
+                  ],
+                  "group": ""
+                }
+              </script>
+            </a>
+          </div>
+          </div>
         <div class="gallery-button-container"><a href="/gallery" class="gallery-button">Больше фото</a><a href="#" class="review-icon"><strong></strong></a></div>
       </div>
     </div>
