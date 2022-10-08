@@ -2,7 +2,13 @@
 
 {% load static %}
 
-{% block title %} Главная - Горный воздух {% endblock %}
+{% block title %} Горный воздух Гузерипль {% endblock %}
+
+{% block meta %}
+  <meta name="description" content="Бронирование мест в Адыгее. Лучший отдых в любую погоду в гостинице Горный воздух"/>
+  <meta property="og:title" content="Горный воздух Гузерипль"/>
+  <meta property="og:description" content="Бронирование мест в Адыгее. Лучший отдых в любую погоду в гостинице Горный воздух"/>
+{% endblock %}
 
 {% block content %}
   <body class="body">
@@ -70,7 +76,7 @@
             height: 'auto',
             rooms: '',
             IsMobile: '0',
-            scroll_to_rooms: '1'
+            scroll_to_rooms: '0'
             })
             BookingIframe.init()
             </script>
@@ -311,7 +317,7 @@
             </a>
           </div>
           </div>
-        <div class="gallery-button-container"><a href="/gallery" class="gallery-button">Больше фото</a><a href="#" class="review-icon"><strong></strong></a></div>
+        <div class="gallery-button-container"><a href="/gallery" class="gallery-button">Больше фото <i class="fa fa-arrow-right gallery-arrow"></i></a></div>
       </div>
     </div>
     <div class="reviews wf-section" id="reviews">
@@ -321,12 +327,12 @@
           <div class="w-slider-mask">
             <div class="w-slide">
               <p class="review-text">«Мы с семьей часто отдыхаем на природе. Выбираем места где потише и немного людей. Горный воздух для нас идеально подходит. Приезжаем сюда уже не в первый раз. Все нравится, еще бы завтраки организовали:, так как утром не хочется готовить. Но рядом есть кафе, можно сходить туда.»</p>
-              <p class="review-icon"><strong></strong></p>
+              <p class="review-icon"><i class="fa fa-angle-down"></i></p>
               <p class="review-author">Инга</p>
             </div>
             <div class="w-slide">
               <p class="review-text">«Отдых в таких местах  мне всегда нравился. Тем более понравилось, что здание самого Дома деревянное, сделано из сруба. Я вообще люблю дерево. Особо хочу отметить хозяев. Теплое, по-настоящему располагающее общение, все достопримечательности расскажут и покажут, если нужно – отвезут. Достойно!».</p>
-              <p class="review-icon"><strong></strong></p>
+              <p class="review-icon"><i class="fa fa-angle-down"></i></p>
               <p class="review-author">Андрей Семенов</p>
             </div>
           </div>

@@ -280,7 +280,7 @@
    
    .review-text {
      margin-bottom: 20px;
-     font-family: Merriweather, serif;
+     font-family: 'Merriweather', serif;
      color: #ddd;
      font-size: 16px;
      line-height: 22px;
@@ -289,7 +289,7 @@
    }
    
    .review-author {
-     font-family: Merriweather, serif;
+     font-family: 'Merriweather', serif;
      color: #fff;
      font-size: 17px;
      font-style: italic;
@@ -297,12 +297,16 @@
    }
    
    .review-icon {
-     font-family: 'Fa solid 900', sans-serif;
      color: #fff;
      font-weight: 900;
+     font-size: 20px;
      text-align: center;
-     text-decoration: none;
-     text-transform: none;
+   }
+
+   .gallery-arrow {
+     color: #fff;
+     font-weight: 900;
+     margin-left: 5px;
    }
    
    .bold-text {
@@ -419,10 +423,10 @@
      text-align: center;
    }
    
-   .footer-contact-adress {
-     display: inline;
-     font-family: 'Fa solid 900', sans-serif;
+   .fa.footer-contact-icon {
      font-size: 18px;
+     color: #fff;
+     margin-right: 5px;
    }
    
    .footer-contact-adress-text {
@@ -678,7 +682,7 @@
     bottom: 0;
     left: 0;
     background: #000;
-    opacity: 0;
+    opacity: 0.9;
     filter: alpha(opacity=0);
     z-index: 91;
    }
@@ -690,6 +694,7 @@
      letter-spacing: 3px;
      text-transform: uppercase;
      color:#ffffff;
+     z-index: 92;
    }
    
    .header-page {
