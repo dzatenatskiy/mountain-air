@@ -308,6 +308,12 @@
      font-weight: 900;
      margin-left: 5px;
    }
+
+   .room-arrow {
+    color: #b89f80;
+    font-weight: 900;
+    margin-left: 5px;
+  }
    
    .bold-text {
      font-family: 'Fa 400', sans-serif;
@@ -466,6 +472,24 @@
      -ms-flex-align: start;
      align-items: flex-start;
    }
+
+   .gallery-container-room {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
    
    .gallery-header {
      font-family: 'Open Sans', sans-serif;
@@ -536,6 +560,7 @@
    
    .room-image {
      margin-bottom: 20px;
+     overflow: hidden;
    }
    
    .room-description {
@@ -573,6 +598,14 @@
      padding-right: 10px;
      padding-left: 10px;
    }
+
+   .gallery-item-room {
+    display: block;
+    width: 25%;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    padding-right: 10px;
+  }
    
    .lightbox-link {
      display: block;
@@ -662,6 +695,22 @@
      color: #cecece;
      font-size: 13px;
    }
+
+   .button-details {
+     color: #fff;
+     background-color: #b89f80;
+     font-family: Merriweather, serif;
+     font-style: italic;
+     font-size: 13px;
+     font-weight: 700;
+     display:inline-block;
+     padding: 12px 25px;
+     text-decoration: none;
+   }
+
+   .button-details:visited {
+    color:#fff
+   }
    
    .page-header {
      position:relative;
@@ -704,6 +753,115 @@
      background-color: #0a0a0a;
      z-index: 999;
      padding: 10px;
+   }
+
+   .rooms-page {
+     padding-top: 55px;
+     padding-bottom: 55px;
+     background-color: #0a0a0a;
+   }
+
+   .rooms-page-button {
+    clear: both;
+    margin-top: 22px;
+    padding-top: 42px;
+   }
+
+   .rooms-page-title-wrapper {
+     border-bottom: 2px solid #3a3a3a;
+     margin-bottom: 25px;
+   }
+
+   .rooms-page-title {
+     color: #ad977b;
+     font-family: 'Open Sans', sans-serif;
+     font-size: 17px;
+     font-weight: 700;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+   }
+
+   .rooms-page-info {
+     width: 100%;
+     color: #d8d8d8;
+     background-color: #252525;
+     font-size: 13px;
+     padding: 16px 20px;
+     margin-bottom: 3px;
+     margin-right: 3px;
+   }
+
+   .rooms-single-page-info{
+     width: 49%;
+     color: #d8d8d8;
+     background-color: #252525;
+     font-size: 13px;
+     padding: 16px 20px;
+     margin-bottom: 3px;
+     margin-right: 3px;
+   }
+
+   .rooms-single-page-info-wrapper {
+     margin-bottom: 50px;
+     display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+   }
+
+   .rooms-page-col-1 {
+    padding-left: 0px;
+   }
+
+   .rooms-page-col-2 {
+    padding-right: 0px;
+   }
+
+   .rooms-page-container {
+    margin-bottom: 50px;
+   }
+
+   .rooms-single-page-info:last-child {
+    clear:both;
+  }
+
+   .fa.rooms-page-icon {
+     font-size: 18px;
+     color: #fff;
+     margin-right: 5px;
+   }
+
+   .room-page-image {
+    overflow: hidden;
+   }
+
+   .rooms-page-thumbnail {
+    overflow: hidden;
+   }
+
+   .room-image:hover {
+    transform: scale(1.1);
+    transition: transform 200ms ease 0s;
+   }
+
+   .room-container {
+    overflow: hidden;
+   }
+
+   .room-page-image:hover {
+    transform: scale(1.1);
+    transition: transform 200ms ease 0s;
    }
    
    @media screen and (max-width: 991px) {
@@ -749,6 +907,15 @@
      .gallery-item {
        min-width: 50%;
      }
+
+     .rooms-page-col-1 {
+      margin-bottom: 30px;
+      padding-right: 0px;
+     }
+
+     .rooms-page-col-2 {
+      padding-left: 0px;
+     }
    }
    
    @media screen and (max-width: 479px) {
@@ -787,6 +954,10 @@
        min-width: 100%;
        margin-top: 8px;
        margin-bottom: 8px;
+     }
+
+     .rooms-page-container{
+      padding: 10px;
      }
    }
    @font-face {

@@ -20,3 +20,12 @@ def contact(request):
 
 def gallery(request):
     return render(request, 'blog/gallery.html', context={})
+
+def rooms(request):
+    return render(request, 'blog/rooms.html', context={})
+
+def standart_rooms(request):
+    return render(request, 'blog/standart-family-room.html', context={})
+
+def lux_rooms(request):
+    return render(request, 'blog/lux-family-room.html', context={})

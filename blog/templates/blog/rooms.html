@@ -1,0 +1,98 @@
+{% extends 'blog/base.html' %}
+
+{% load static %}
+
+{% block title %} Номера Гостиницы Горный Воздух {% endblock %}
+
+{% block meta %}
+  <meta name="description" content="Комфортабельные номера в любую погоду"/>
+  <meta property="og:title" content="Номера Гостиницы Горный Воздух"/>
+  <meta property="og:description" content="Комфортабельные номера в любую погоду"/>
+{% endblock %}
+
+{% block content %}
+
+<body>
+    <div class="header-page wf-section">
+      {% include 'blog/navbar.html' %}
+    </div>
+    <div class="page-header wf-section">
+      <div class="w-container">
+        <h2 class="page-header-h2">Номера</h2>
+        <div class="header-page-line"></div>
+      </div>
+    </div>
+    <div class="rooms-page wf-section">
+        <div class="w-container rooms-page-container">
+            <div class="rooms-page-title-wrapper">
+                <h3 class="rooms-page-title">Стандарт семейный</h3>
+            </div> 
+            <div class="w-col w-col-7 rooms-page-col-1">
+                <div class="rooms-page-thumbnail">
+                    <img src="{% static 'img/8W7A3636.jpg' %}" loading="lazy" sizes="(max-width: 767px) 96vw, (max-width: 991px) 354px, 460px" srcset="{% static 'img/8W7A3636.jpg' %} 500w, {% static 'img/8W7A3636.jpg' %} 800w" alt="" class="room-page-image">
+                </div>
+            </div>
+            <div class="w-col w-col-5 rooms-page-col-2">
+                <div class="rooms-page-info-wrapper">
+                    <div class="rooms-page-info">
+                        <i class="fa fa-bed rooms-page-icon"></i><span> Двуспальная кровать</span>
+                    </div>
+                    <div class="rooms-page-info">
+                        <i class="fa fa-check-square-o rooms-page-icon"></i><span> Раскладной диван</span>
+                    </div>
+                    <div class="rooms-page-info">
+                        <i class="fa fa-snowflake-o rooms-page-icon"></i><span>Холодильник</span>
+                    </div>
+                    <div class="rooms-page-info">
+                        <i class="fa fa-check-square-o rooms-page-icon"></i><span>Микроволновая печь</span>
+                    </div>
+                    <div class="rooms-page-info">
+                        <i class="fa fa-television rooms-page-icon"></i><span>Телевизор</span>
+                    </div>
+                    <div class="rooms-page-info">
+                        <i class="fa fa-s15 rooms-page-icon"></i><span>Душ</span>
+                    </div>
+                </div>
+            </div>
+            <div class="rooms-page-button">
+                <a href="/the-rooms/standart-family-room/" class="button-details">Подробнее <i class="fa fa-arrow-right gallery-arrow"></i></a>
+            </div>
+        </div>
+        <div class="w-container rooms-page-container">
+            <div class="rooms-page-title-wrapper">
+                <h3 class="rooms-page-title">Люкс семейный</h3>
+            </div> 
+            <div class="w-col w-col-7 rooms-page-col-1">
+                <div class="rooms-page-thumbnail">
+                    <img src="{% static 'img/slider6.png' %}" loading="lazy" sizes="(max-width: 767px) 96vw, (max-width: 991px) 354px, 460px" srcset="{% static 'img/slider6.png' %} 500w, {% static 'img/slider6.png' %} 800w, {% static 'img/slider6.png' %} 1080w, {% static 'img/slider6.png' %} 1200w" alt="" class="room-page-image">
+                </div>
+            </div>
+            <div class="w-col w-col-5 rooms-page-col-2">
+                <div class="rooms-page-info-wrapper">
+                    <div class="rooms-page-info">
+                        <i class="fa fa-bed rooms-page-icon"></i><span> Двуспальная кровать</span>
+                    </div>
+                    <div class="rooms-page-info">
+                        <i class="fa fa-check-square-o rooms-page-icon"></i><span> Раскладной диван</span>
+                    </div>
+                    <div class="rooms-page-info">
+                        <i class="fa fa-snowflake-o rooms-page-icon"></i><span>Холодильник</span>
+                    </div>
+                    <div class="rooms-page-info">
+                        <i class="fa fa-check-square-o rooms-page-icon"></i><span>Микроволновая печь</span>
+                    </div>
+                    <div class="rooms-page-info">
+                        <i class="fa fa-television rooms-page-icon"></i><span>Телевизор</span>
+                    </div>
+                    <div class="rooms-page-info">
+                        <i class="fa fa-s15 rooms-page-icon"></i><span>Душ</span>
+                    </div>
+                </div>
+            </div>
+            <div class="rooms-page-button">
+                <a href="/the-rooms/lux-family-room/" class="button-details">Подробнее <i class="fa fa-arrow-right gallery-arrow"></i></a>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
