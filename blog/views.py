@@ -29,3 +29,9 @@ def standart_rooms(request):
 
 def lux_rooms(request):
     return render(request, 'blog/lux-family-room.html', context={})
+
+def about_us(request):
+    return render(request, 'blog/about_us.html', context={})
+
+def pravila(request):
+    return render(request, 'blog/pravila.html', context={})

@@ -863,6 +863,41 @@
     transform: scale(1.1);
     transition: transform 200ms ease 0s;
    }
+
+   .about_us-page {
+    padding-top: 115px;
+    padding-bottom: 65px;
+   }
+
+   .about_us-page p{
+    font-size: 14px;
+    font-family: 'Merriweather';
+    color: #3f3f3f;
+   }
+
+   .pravila-page {
+    padding-top: 65px;
+    padding-bottom: 65px;
+   }
+
+   .pravila-page h3{
+    color: #3f3f3f;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+   }
+
+   .pravila-page li{
+    font-size: 14px;
+    font-family: 'Merriweather';
+    color: #3f3f3f;
+    margin-bottom: 20px;
+   }
+
+
+
    
    @media screen and (max-width: 991px) {
      .gallery-item {
@@ -916,6 +951,18 @@
      .rooms-page-col-2 {
       padding-left: 0px;
      }
+
+     .about_us-page{
+      margin-left:10px;
+      margin-right: 10px;
+     }
+
+     .pravila-page{
+      margin-left:10px;
+      margin-right: 10px;
+     }
+
+
    }
    
    @media screen and (max-width: 479px) {
@@ -960,6 +1007,14 @@
       padding: 10px;
      }
    }
+
+   @media screen and (max-width: 320px) {
+    .slider-header-2{
+      margin-top: 30px;
+      margin-bottom: 0px;
+    }
+   }
+
    @font-face {
      font-family: 'Fa 400';
      src: url('https://uploads-ssl.webflow.com/62f769fbfd7b99fe7c370946/6307cfea66ad530ae85765d9_fa-regular-400.ttf') format('truetype');
