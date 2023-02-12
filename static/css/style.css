@@ -43,6 +43,7 @@
    
    .menu-item:hover {
      border-bottom: 2px solid #b89f80;
+     padding-bottom: 8px;
    }
    
    .body {
@@ -478,10 +479,7 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    justify-content: flex-start;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -759,6 +757,9 @@
      padding-top: 55px;
      padding-bottom: 55px;
      background-color: #0a0a0a;
+     color:#d8d8d8;
+     font-size: 11px;
+     font-family: 'Merriweather';
    }
 
    .rooms-page-button {
@@ -781,11 +782,10 @@
      letter-spacing: 2px;
    }
 
+   
    .rooms-page-info {
      width: 100%;
-     color: #d8d8d8;
      background-color: #252525;
-     font-size: 13px;
      padding: 16px 20px;
      margin-bottom: 3px;
      margin-right: 3px;
@@ -793,9 +793,7 @@
 
    .rooms-single-page-info{
      width: 49%;
-     color: #d8d8d8;
      background-color: #252525;
-     font-size: 13px;
      padding: 16px 20px;
      margin-bottom: 3px;
      margin-right: 3px;
@@ -807,10 +805,7 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    justify-content: flex-start;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -867,14 +862,11 @@
    .about_us-page {
     padding-top: 115px;
     padding-bottom: 65px;
-   }
-
-   .about_us-page p{
     font-size: 14px;
     font-family: 'Merriweather';
     color: #3f3f3f;
    }
-
+   
    .pravila-page {
     padding-top: 65px;
     padding-bottom: 65px;
